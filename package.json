@@ -1,0 +1,26 @@
+{
+  "name": "order-summary-component-main",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Challenge #3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IEdiong/fem-order-summary-component.git"
+  },
+  "keywords": [
+    "frontend"
+  ],
+  "author": "Ediongsenyene Joseph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IEdiong/fem-order-summary-component/issues"
+  },
+  "homepage": "https://github.com/IEdiong/fem-order-summary-component#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
