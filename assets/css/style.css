@@ -24,7 +24,7 @@ body {
   display: flex;
   align-items: center;
   line-height: 1.7;
-  background: var(--bg-primary-clr) url(../../images/pattern-background-mobile.svg) no-repeat ;
+  background: var(--bg-primary-clr) url(../../images/pattern-background-mobile.svg) no-repeat;
   background-position: top;
 }
 
@@ -35,10 +35,10 @@ img {
 /* typography */
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 900;
   color: var(--dark-blue);
-  margin-top: 0.7em;
+  margin-top: 1em;
   margin-bottom: 0.5em;
 }
 
@@ -72,8 +72,6 @@ h2 {
   border-radius: 20px;
   overflow: hidden;
   max-width: 450px;
-  /* outline: 2px solid burlywood; */
-  /* display: none; */
 }
 
 .order-summary-card {
@@ -90,10 +88,6 @@ h2 {
   border-radius: 10px;
 }
 
-.osc__pricing a :hover {
-  text-decoration: none;
-}
-
 .osc--plan {
   align-self: flex-start;
   text-align: left;
@@ -102,37 +96,37 @@ h2 {
   margin-left: 1em;
 }
 
+.osc__pricing a {
+  font-weight: 700;
+  color: var(--accent-clr);
+}
+
 .osc__proceed,
 .osc__cancel {
   display: block;
   text-decoration: none;
+  padding-inline: .3em;
 }
 
 .osc__proceed {
-  margin-top: 1.4em;
-  padding-top: .7em;
-  padding-bottom: .7em;
+  margin-top: 1.7em;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
   border-radius: 10px;
   background-color: var(--accent-clr);
   color: #ffffff;
-  font-weight: 700;
-  box-shadow: var(--bg-primary-clr) 1px 1px;
+  font-weight: 900;
+  box-shadow: 0px 1.3em 15px var(--bg-primary-clr);
 }
 
 .osc__cancel {
-  margin-top: .7em;
-  margin-bottom: 1.7em;
-  padding-top: .6em;
-  padding-bottom: .6em;
-  /* background-color: var(--accent-clr); */
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
   color: var(--desat-blue);
-  font-weight: 700;
+  font-weight: 900;
 }
-
-a .osc__cancel:hover {
-  color: var(--dark-blue);
-}
-
 
 @media (min-width: 376px) {
   body {
@@ -141,7 +135,7 @@ a .osc__cancel:hover {
   }
 
   .osc__content {
-    max-width: 36ch;
+    max-width: 30ch;
     margin-inline: auto;
   }
 
@@ -149,5 +143,18 @@ a .osc__cancel:hover {
     max-width: 355px;
     margin-inline: auto;
   }
-  
+
+  .osc__pricing a:hover {
+    text-decoration: none;
+  }
+
+  .osc__proceed:focus,
+  .osc__proceed:hover {
+    background-color: hsl(245, 65%, 60%);
+  }
+
+
+  .osc__cancel:hover {
+    color: var(--dark-blue);
+  }
 }
