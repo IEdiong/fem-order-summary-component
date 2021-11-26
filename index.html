@@ -25,25 +25,29 @@
     </style>
   </head>
   <body>
+    <header>
+      <h1 class="sr-only">Order summary card</h1>
+    </header>
     <main class="container">
       <div class="card">
-        <!-- <h1 class="sr-only">Order summary card</h1> -->
         <div class="card-hero-image">
           <img src="./images/illustration-hero.svg" alt="lady listening to music" />
         </div>
         <div class="order-summary-card">
           <h2 class="order-summary-card__title">Order Summary</h2>
           <p class="osc__content">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-          <div class="osc__pricing">
-            <img src="images/icon-music.svg" alt="music icon" />
-            <div class="osc--plan">
-              <div class="osc__plan--title text-clr-dark">Annual Plan</div>
-              <div class="osc__price">$59.99/year</div>
+          <div class="osc__cta">
+            <div class="osc__pricing">
+              <img src="images/icon-music.svg" alt="music icon" />
+              <div class="osc--plan">
+                <div class="osc__plan--title text-clr-dark">Annual Plan</div>
+                <div class="osc__price">$59.99/year</div>
+              </div>
+              <a href="#">Change</a>
             </div>
-            <a href="#">Change</a>
+            <a href="#" class="osc__proceed">Proceed to Payment</a>
+            <a href="#" class="osc__cancel">Cancel Order</a>
           </div>
-          <a href="#" class="osc__proceed">Proceed to Payment</a>
-          <a href="#" class="osc__cancel">Cancel Order</a>
         </div>
       </div>
     </main>

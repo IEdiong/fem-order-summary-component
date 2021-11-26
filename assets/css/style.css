@@ -15,7 +15,6 @@
 }
 
 body {
-  background-color: var(--bg-primary-clr);
   color: var(--desat-blue);
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 500;
@@ -25,7 +24,8 @@ body {
   display: flex;
   align-items: center;
   line-height: 1.7;
-  background: url(../../images/pattern-background-mobile.svg) no-repeat;
+  background: var(--bg-primary-clr) url(../../images/pattern-background-mobile.svg) no-repeat ;
+  background-position: top;
 }
 
 img {
@@ -35,6 +35,7 @@ img {
 /* typography */
 
 h2 {
+  font-size: 2rem;
   font-weight: 900;
   color: var(--dark-blue);
   margin-top: 0.7em;
@@ -45,7 +46,7 @@ h2 {
 
 .container {
   width: 88%;
-  max-width: 350px;
+  max-width: 450px;
   margin-inline: auto;
 }
 
@@ -68,9 +69,11 @@ h2 {
 
 .card {
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
+  max-width: 450px;
   /* outline: 2px solid burlywood; */
+  /* display: none; */
 }
 
 .order-summary-card {
@@ -84,7 +87,11 @@ h2 {
   background-color: var(--v-pale-blue);
   padding: 1em;
   margin-top: 1.5em;
-  border-radius: 7px;
+  border-radius: 10px;
+}
+
+.osc__pricing a :hover {
+  text-decoration: none;
 }
 
 .osc--plan {
@@ -93,4 +100,54 @@ h2 {
   flex-basis: 1;
   flex-grow: 1;
   margin-left: 1em;
+}
+
+.osc__proceed,
+.osc__cancel {
+  display: block;
+  text-decoration: none;
+}
+
+.osc__proceed {
+  margin-top: 1.4em;
+  padding-top: .7em;
+  padding-bottom: .7em;
+  border-radius: 10px;
+  background-color: var(--accent-clr);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: var(--bg-primary-clr) 1px 1px;
+}
+
+.osc__cancel {
+  margin-top: .7em;
+  margin-bottom: 1.7em;
+  padding-top: .6em;
+  padding-bottom: .6em;
+  /* background-color: var(--accent-clr); */
+  color: var(--desat-blue);
+  font-weight: 700;
+}
+
+a .osc__cancel:hover {
+  color: var(--dark-blue);
+}
+
+
+@media (min-width: 376px) {
+  body {
+    background: var(--bg-primary-clr) url(../../images/pattern-background-desktop.svg) no-repeat;
+    background-size: 100%;
+  }
+
+  .osc__content {
+    max-width: 36ch;
+    margin-inline: auto;
+  }
+
+  .osc__cta {
+    max-width: 355px;
+    margin-inline: auto;
+  }
+  
 }
